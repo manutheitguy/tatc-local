@@ -1,0 +1,27 @@
+.jumbotron {
+    background-image: url(../images/reception.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.jumbo-txt {
+    font-weight: 600;
+    position: relative;
+    top: 2.5rem;
+    color: white;
+}
+
+.tatc-services {
+    position: relative;
+    top: -2rem;
+}
+.lead {
+    color: #fff;
+}

@@ -1,0 +1,206 @@
+ {% extends 'home/base.html' %} {% load static %}
+
+<body class="aboutPage">
+	{% block nav %}{% include 'home/nav-section.html' %}{% endblock nav %} {% block about %}
+
+	<section id="sliderInner" class="defineFloat aboutSlider">
+		<img src="{% static 'home/images/aboutSlider.jpg' %}" class="img-responsive" alt="" />
+		<div class="slideContent servicesButton">
+			<h2>Trans-Atlantic Trading Company</h2>
+			<p>
+				The Trans-Atlantic Trading company is a multi-faceted company that was formed to respond to needs in the imports and exports
+				of high demand products and commodities, provision of IT Services as well as general supplies.
+			</p>
+			<a href="javascript:void(0);" id="jQueryButtons" class="btn btn-default whiteButton ">Why we are Different?</a>
+		</div>
+	</section>
+
+	<section class="defineFloat" id="aboutSeo">
+		<div class="container ">
+			<div class="row">
+				<div class="col-sm-12 col-xs-12 noPad aboutSeoFirst ">
+					<div class="col-sm-6 col-xs-6 asfLeft wow fadeIn">
+						<h2>Trans-Atlantic Primarily exists
+							<br> to facilitate other businesses,
+							<br> positively impact the society
+							<br> & solve problems</h2>
+						<hr>
+					</div>
+					<div class="col-sm-6 col-xs-6 asfRight wow fadeIn">
+						<p>With extensive industry experience and customer-centric approach, we ensure your brand, website and marketing campaigns
+							perform exceptionally, every time. </p>
+						<p>We are an experienced team of professionals that stands at the forefront of all emerging trends in digital marketing.
+							Understanding that every business has a different set of challenges and unique requirements, we deliver custom Internet
+							Marketing Solutions.</p>
+
+						<ul class="list-unstyled">
+							<li>
+								<a id="marketLink" href="{% url 'index' %}" title="">Our services
+									<img src="{% static 'home/images/arrowRight.png' %}" alt="" class="img-responsive" />
+								</a>
+							</li>
+							<li>
+								<a href="{% url 'index' %}" title="">OUr Work
+									<img src="{% static 'home/images/arrowRight.png' %}" alt="" class="img-responsive" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-12 col-xs-12 aboutSlides">
+
+					<div class="home-demo">
+						<div class="row">
+							<div class="large-12 columns">
+
+								<div class="owl-carousel">
+									<div class="item">
+										<img src="{% static 'home/images/abslide-1.jpg' %}" alt="...">
+									</div>
+									<div class="item">
+										<img src="{% static 'home/images/abslide-2.jpg' %}" alt="...">
+									</div>
+									<div class="item">
+										<img src="{% static 'home/images/abslide-3.jpg' %}" alt="...">
+									</div>
+									<div class="item">
+										<img src="{% static 'home/images/abslide-4.jpg' %}" alt="...">
+									</div>
+									<div class="item">
+										<img src="{% static 'home/images/abslide-5.jpg' %}" alt="...">
+									</div>
+									<div class="item">
+										<img src="{% static 'home/images/abslide-6.jpg' %}" alt="...">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="defineFloat" id="aboutSeoExperts">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-xs-12 text-center assHeading">
+					<h2>Why Trans-Atlantic Trading Company?</h2>
+					<hr>
+				</div>
+				<div class="col-sm-12 col-xs-12 noPad assOute">
+					<div class="col-sm-6 col-xs-6 assLeft">
+						<div class="col-sm-12 col-xs-12 noPad assIn wow fadeIn">
+							<div class="asslImage">
+								<img src="{% static 'home/images/new/ass1.png' %}" class="img-responsive" alt="" /> </div>
+							<div class="asslContent">
+								<h3>
+									Strong & Talented team 
+								</h3>
+								<p>
+									Our team carries a unique blend of unparalleled background experience from diverse industry segments to deliver best-in-class trading, logistics and IT Services.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-12 col-xs-12 noPad assIn wow fadeIn">
+							<div class="asslImage">
+								<img src="{% static 'home/images/new/ass2.png' %}" class="img-responsive" alt="" /> </div>
+							<div class="asslContent">
+								<h3>
+									100% Ethical & Transparent 
+								</h3>
+								<p>
+									By virtue of working in the field of trading for quite some time now, we have put together a set of highly efficient & effective processes and techniques that are among the primary reasons for our high perfomance.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-12 col-xs-12 noPad assIn wow fadeIn">
+							<div class="asslImage">
+								<img src="{% static 'home/images/new/ass3.png' %}" class="img-responsive" alt="" /> </div>
+							<div class="asslContent">
+								<h3>
+									Proven Trading record
+								</h3>
+								<p>
+									Be it technical skills or domain knowledge or experience of dealing with overseas clients, we've got all the experience & expertise to deliver end-to-end trading services for our clients.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-12 col-xs-12 noPad assIn wow fadeIn">
+							<div class="asslImage">
+								<img src="{% static 'home/images/new/ass4.png' %}" class="img-responsive" alt="" /> </div>
+							<div class="asslContent">
+								<h3>Price Competitiveness</h3>
+								<p>
+									We take pride in our Competitive Price Quotes! Get one now » We enjoy rendering maximum ROI for our customers at the lowest cost possible.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6 assRight">
+						<div class="col-sm-12 col-xs-12 noPad assIn wow fadeIn">
+							<div class="assrImage">
+								<img src="{% static 'home/images/new/ass5.png' %}" class="img-responsive" alt="" /> </div>
+							<div class="assrContent">
+								<h3>
+									Trading partners worldwide
+								</h3>
+								<p>
+									60% percent of our partners are worldwide & we've worked for clients in more than 20+ countries as a result we know how to work with different cultures.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-12 col-xs-12 noPad assIn wow fadeIn">
+							<div class="assrImage">
+								<img src="{% static 'home/images/new/ass6.png' %}" class="img-responsive" alt="" /> </div>
+							<div class="assrContent">
+								<h3>
+									KEBS Approved
+								</h3>
+								<p>
+									Our imports and exports are approved by the kenya beareu of standards do so our partners are assured of the best quality products at all times.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-12 col-xs-12 noPad assIn wow fadeIn">
+							<div class="assrImage">
+								<img src="{% static 'home/images/new/ass7.png' %}" class="img-responsive" alt="" /> </div>
+							<div class="assrContent">
+								<h3>
+									One stop shop 
+								</h3>
+								<p>
+									We're a one-stop provider you can depend on for web development, logistics or trading - we have the required expertise & experience to do it all.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-12 col-xs-12 noPad assIn wow fadeIn">
+							<div class="assrImage">
+								<img src="{% static 'home/images/new/ass8.png' %}" class="img-responsive" alt="" /> </div>
+							<div class="assrContent">
+								<h3>Quality of Work</h3>
+								<p>Our customers speak high about our work and we take pride in it!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<section id="company" class="defineFloat">
+	<div class="container">
+		<div class="row">
+		{% include 'home/nums-section.html' %} 
+		</div>
+	</div>
+</section>
+
+{% endblock about %} 
+
+{% block form %}{% include 'home/form-section.html' %}{% endblock form %}
+
+{% block footer %}{% include 'home/footer-section.html' %}{% endblock footer %}

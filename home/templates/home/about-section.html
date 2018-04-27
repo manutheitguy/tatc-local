@@ -1,0 +1,37 @@
+ {% load static %}
+
+<section id="who" class="defineFloat">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-12 col-xs-12 noPad">
+        <div class="col-md-3 col-sm-3 col-sm-offset-1 col-xs-12 whoLeft wow fadeInUp" style="visibility: hidden; animation-name: none;">
+          <hr>
+          <h2>Who We Are</h2>
+        </div>
+        <div class="col-md-7 col-sm-8 col-xs-12 whoRight wow fadeInUp" style="visibility: hidden; animation-name: none;">
+          <p>We are a
+            <span>multi-faceted company </span> dealing in trade, logistics and IT Services.</p>
+          <hr>
+          <div class="defineFloat whoInner">
+            <p>
+              To make a distintion of yourself in the market place, you have to offer what is unique and of value to humanity. Trans-Atrantic is your reliable trding partner, able to supply large quantities of agricultural produce and industrial pruducts expediciouly and at competitive prices. We export a wide range of agricultural produce to our overseases partners inclding tea, coffee, pineapples, meat and meat products as well as livestock. Likewise we import construction materials, petroleum products, industrial chemicals, pharmaceuticals and sugar.
+            </p>
+          </div>
+
+          <div class="defineFloat whoLinks">
+            <a href="{% url 'about' %}" title="" data-original-title="Know more about us">
+              <span>Know more about us</span>
+              <img src="{% static 'home/images/rightArrow.png' %}" alt="" class="img-responsive">
+            </a>
+            <a href="{% url 'about' %}" id="jQueryButtons2" title="" data-original-title="What makes us different? ">
+              <span>What makes us different?</span>
+              <img src="{% static 'home/images/rightArrow.png' %}" alt="" class="img-responsive">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

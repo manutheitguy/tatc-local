@@ -1,0 +1,238 @@
+{% extends 'home/base.html' %} {% load static %}
+
+<body class="contentWriting">
+{% block nav %}{% include 'home/nav-section.html' %}{% endblock nav %} 
+{% block exports %}
+
+<section id="sliderInner" class="defineFloat commonHeight">
+    <img src="{% static 'home/images/contentWritingBg.png' %}" class="img-responsive" alt="" />
+    <div class="slideContent servicesButton">
+        <h2>We've Got The IT Solutions You Need</h2>
+        <p>
+            Make use of our IT solutions and blow your competitors into oblivion.
+        </p>
+        <a href="{% url 'contact' %}" class="btn btn-default whiteButton cuArrow btnOne">TALK TO US
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </a>
+    </div>
+</section>
+
+    <section class="defineFloat" id="contentWritingImportant">
+        <div class="container">
+            <div class="row wow fadeIn">
+                <div class="col-sm-12 col-xs-12 text-center cwiHeading">
+                    <h2>BUT WHY IS TECHNOLOGY SO IMPORTANT?</h2>
+                    <p>Because Technology is what you need to take your business to the next level.</p>
+                </div>
+                <div class="col-sm-12 col-xs-12 text-center cwiParagraph">
+                    <p>
+                        Technology has important effects on business operations. No matter the size of your enterprise, technology has both tangible and intangible benefits that will help you make money and produce the results your customers demand. Technological infrastructure
+                        affects the culture, efficiency and relationships of a business. It also affects the security of confidential information and trade advantages.
+                    </p>
+                </div>
+            </div>
+            <div class="row wow fadeIn">
+                <div class="col-sm-4 col-xs-4 cwiBlocks blue">
+                    <h3>Communication With Customers</h3>
+                    <p>
+                        Technology affects the communication with customers. In today’s busy business environment, it is necessary for employees to interact with clients quickly and clearly. Websites allow customers to find answers to their questions after hours. Fast shipment options allow businesses to move products over a large geographic area. When customers use technology to interact with a business, the business benefits because better communication creates a stronger public image.
+                    </p>
+                </div>
+                <div class="col-sm-4 col-xs-4 cwiBlocks orange">
+                    <h3>Efficiency of Bussiness Operations</h3>
+                    <p>
+                        Technology also helps a business understand its cash flow needs and preserve precious resources such as time and physical
+                        space. Warehouse inventory technologies let business owners understand how best to manage the storage costs of holding a
+                        product. With proper technology in place, executives can save time and money by holding meetings over the Internet instead
+                        of at corporate headquarters
+                    </p>
+                </div>
+                <div class="col-sm-4 col-xs-4 cwiBlocks gray">
+                    <h3>Security of Company Data</h3>
+                    <p>
+                        Most businesses of the modern era are subject to security threats and vandalism. Technology can be used to protect financial
+                        data, confidential executive decisions and other proprietary information that leads to competitive advantages. Simply put,
+                        technology helps businesses keep their ideas away from their competition. By having computers with passwords, a business
+                        can ensure none of its forthcoming projects will be copied by the competition.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="defineFloat" id="cwBrand">
+        <div class="container">
+            <div class="row wow fadeIn">
+                <div class="col-sm-12 col-xs-12 text-center cwbHeading">
+                    <span>Creating tech-solutions for mordern day businesses</span>
+                    <h2>WE DEVELOP & BUILD SOLUTIONS TO HELP YOU GROW YOUR BUSINESS! </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 noPad cwbKhmOuter">
+                    <div class="col-md-3 col-sm-6 col-xs-6 text-center cwbKhmInner wow fadeIn">
+                        <div class="cwbKhmImage">
+                            <img src="{% static 'home/images/new/cwb1.png' %}" class="img-responsive" alt="" />
+                        </div>
+                        <h2>Software Solutions</h2>
+                        <p>
+                            We have the most creative and solution oriented development team for all your software needs. We are not biased to any technology or framework which means we do maintenance on legacy software.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 text-center cwbKhmInner wow fadeIn">
+                        <div class="cwbKhmImage">
+                            <img src="{% static 'home/images/new/cwb2.png' %}" class="img-responsive" alt="" />
+                        </div>
+                        <h2>Web Development</h2>
+                        <p>
+                            From simple portfolio websites to highend complex ecommerce stores we do it all. We also do bulk sms intergration and email marketing. Give us your specifications and deliver the best.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 text-center cwbKhmInner wow fadeIn">
+                        <div class="cwbKhmImage">
+                            <img src="{% static 'home/images/new/cwb3.png' %}" class="img-responsive" alt="" />
+                        </div>
+                        <h2>Web Hosting</h2>
+                        <p>
+                            Our Web Hosting package is $20 per month with 10GB storage and unlimited bandwith however we are flexible enough to accomodate any of your specific business needs with regards to web hosting. 
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 text-center cwbKhmInner wow fadeIn">
+                        <div class="cwbKhmImage">
+                            <img src="{% static 'home/images/new/cwb4.png' %}" class="img-responsive" alt="" />
+                        </div>
+                        <h2>Digital Marketing</h2>
+                        <p>
+                            With the rise of social media companies have an opportunity to do targeted advertising and reach more clients. We are the bridge that you need to connect with your customers.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 text-center cwbKhmInner borderBottom wow fadeIn">
+                        <div class="cwbKhmImage">
+                            <img src="{% static 'home/images/new/cwb5.png' %}" class="img-responsive" alt="" />
+                        </div>
+                        <h2>Search Engine Optimization</h2>
+                        <p>
+                            We all know if you are looking for any products or services online the first place you stop by is google. We'll help your business rank higher on the internet so you get more leads for your business.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 text-center cwbKhmInner borderBottom wow fadeIn">
+                        <div class="cwbKhmImage">
+                            <img src="{% static 'home/images/new/cwb6.png' %}" class="img-responsive" alt="" />
+                        </div>
+                        <h2>Security System Installation</h2>
+                        <p>
+                            Security is an important aspect to a business we'll help you utilize the existing technology such CCTV cameras and Access Control Systems to secure your business or home. Talk to us.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 text-center cwbKhmInner borderBottom wow fadeIn">
+                        <div class="cwbKhmImage">
+                            <img src="{% static 'home/images/new/cwb7.png' %}" class="img-responsive" alt="" />
+                        </div>
+                        <h2>Network Setup </h2>
+                        <p>
+                            We do all kinds of network installations from small businesss to large corporates. whenever in need of networking services contact us for the service in the market at a friendly fee.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 text-center cwbKhmInner borderBottom wow fadeIn">
+                        <div class="cwbKhmImage">
+                            <img src="{% static 'home/images/new/cwb8.png' %}" class="img-responsive" alt="" />
+                        </div>
+                        <h2>Server Configuration</h2>
+                        <p>
+                            We build out company IT infrastructure for the smooth running of all the business processes. We configure linux mail servers, web servers, file servers as Windows servers with services such as active directory.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 text-center cwbArrow wow zoomIn">
+                    <img src="{% static 'home/images/downArrow.png' %}" class="img-responsive" alt="" />
+                </div>
+                <div class="col-sm-12 col-xs-12 text-center cwbConnect wow fadeIn">
+                    <h2>Need a solution for your business? </h2>
+                </div>
+                <div class="col-sm-12 col-xs-12 text-center cwbcImage wow zoomIn">
+                    <img src="{% static 'home/images/new/cwBrandAroow.png' %}" class="img-responsive" alt="" />
+                </div>
+                <div class="col-sm-12 col-xs-12 text-center cwbButton ">
+
+
+                    <div class="defineFloat text-center businessButton wow fadeInUp">
+                        <button href="{% url 'contact' %}" type="button" class="btn btn-primary yellowButton hvr-grow popUpFormThree btnTwo cuArrow customSize">Get In Touch
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </button>
+                        <span class="text-center defineFloat">
+                            <a title="+254 (0)20 2004959">Call us on  +254 (0)20 2004959</a>
+                        </span>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="defineFloat" id="cwQuality">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12 cwqleft wow fadeIn">
+                    <h2>WHAT CAN YOU ACHIEVE WITH OUR IT SOLUTIONS?</h2>
+                </div>
+                <div class="col-sm-6 col-xs-12 cwqRight wow fadeIn">
+                    <ul class="list-unstyled">
+                        <li class="wow fadeIn" data-wow-delay="0s">Enhance realtime communication</li>
+                        <li class="wow fadeIn" data-wow-delay="0s">Efficiency of operations</li>
+                        <li class="wow fadeIn" data-wow-delay="0.2s">Business Culture and Class Relations</li>
+                        <li class="wow fadeIn" data-wow-delay="0.2s">Enhance security in your business</li>
+                        <li class="wow fadeIn" data-wow-delay="0.4s">Improve sales through marketing</li>
+                        <li class="wow fadeIn" data-wow-delay="0.4s">Improve customer satisfaction</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-xs-12 text-center cwqButton wow fadeInUp">
+                    <button href="{% url 'contact' %}" type="button" class="btn btn-default commonInnerButton2 simpleHover btnThree cuArrow">Enquire Now & Get a Free Quote
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="defineFloat outsource text-center">
+        <div class="container demo">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading bottomStrip" id="headingOne">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fa fa-plus"></i>Advantages of outsourcing IT services?</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body blackColor">
+                            <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 whyOutSource-textCoulmn">
+                                 1. Stay Focused on Your Core Business: Businesses have limited resources, and every manager has limited time and attention.
+                                Outsourcing can help your business stay focused on your core business and not get distracted by complex IT decisions.
+                                <br/> 
+                                 2. Trained, Experienced, Qualified, Certified: If you’re not IT trained, how do you assure an employee is qualified? Certifications
+                                like Microsoft Certified Systems Enginner (MCSE) are important, but so is experience.
+                                <br/> 
+                                 3. Reduce Labor Costs: Hiring and training an IT staff can be very expensive, and temporary employees don't always live up
+                                to your expectations. Outsourcing lets you focus your human resources where you need them most.
+                                <br/> 
+                                 4. Qualified doesn’t Equal Experienced: Few problems are new for leading IT service companies, which see related problems
+                                multiple times. An in-house IT employee leads an isolated existence no matter how much they train. We'd all rather an experienced
+                                doctor; the same is true for IT.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- panel-group -->
+
+        </div>
+        <!-- container -->
+    </section>
+   
+
+{% endblock exports %} 
+{% block footer %}{% include 'home/footer-section.html' %}{% endblock footer %}

@@ -1,0 +1,38 @@
+{% extends 'home/base.html' %}
+{% load static %}
+<body class="home  pace-done">
+{% block nav %}{% include 'home/nav-section.html' %}{% endblock nav %}
+
+{% block articles %}
+<div class="container-fluid articles-body">
+<div class="container">
+    <div class="articles-wrapper pt-5">
+        {% for article in articles %}
+            <div class="row article">
+                <div class="col-md-5 article-img">
+                    <img class="article-img" src="{{ article.thumb.url }}" alt="article thumbnail">
+                </div>
+                <div class="col-md-7  article-txt">                    
+                        <div class="article-title" >
+                        <h2><a class="text-dark" href="{% url 'articles:detail' slug=article.slug %}">{{ article.title }}</a></h2>
+                    </div>
+                        <div class="article-details">
+                            <ul>
+                            <li>Written by: {{ article.author }}</li>
+                            <li>Published on: {{ article.date }}</li>
+                            </ul>
+                        </div>
+                    <div class="article-snippet">
+                        <p>{{ article.snippet }}</p>
+                    </div>
+                    <div class="article-readmore">
+                        <a href="{% url 'articles:detail' slug=article.slug %}" class="btn btn-primary blueButton hvr-grow" id="getstartbtn">READ MORE</a> 
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+{% endblock articles %}
+{% block footer %}{% include 'home/footer-section.html' %}{% endblock footer %}

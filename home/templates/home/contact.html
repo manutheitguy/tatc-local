@@ -1,0 +1,86 @@
+{% extends 'home/base.html' %} {% load static %}
+
+<body class="reviews">
+	{% block nav %}{% include 'home/nav-section.html' %}{% endblock nav %} {% block contact %}
+
+	<section id="sliderInner" class="defineFloat commonSlider formbannerArrow">
+		<h4 class="hide">removing error</h4>
+		<!--img src="{% static 'home/images/getInTouch.jpg" class="img-responsive" alt="" /-->
+	</section>
+
+	<section class="defineFloat" id="getInTouch">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="container">
+					<div id="contForm" class="col-sm-12 col-xs-12 text-center getHeading">
+						<h2>For any inquiries contact us below</h2>
+						<hr>
+						<p>
+							We would love to work with you and are waiting for you to drop us a line! Please fill out the form below to get in touch. We’ll be sure to get back to you as soon as we can.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-xs-12 getOuter">
+					<div class="col-sm-12 col-xs-12">
+
+						<div class="defineFloat getOut">
+
+							<div class="col-md-7 col-sm-12 col-xs-12 noPad getLeft">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.451753422216!2d36.8599411!3d-1.2538866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe9500606a945d761!2sInstitute+of+Certified+Public+Accountants+of+Kenya!5e0!3m2!1sen!2ske!4v1519034034117"
+									width="100%" height="700" frameborder="0" style="border:0" allowfullscreen>
+								</iframe>
+							</div>
+
+
+							<div class="col-md-5 col-sm-12 col-xs-12 getLeft noPad grayBg">
+								<form class="contactPageform" id="mainform" method="post">
+									<div class="form-group">
+										<label>Name</label>
+										<input name="txtName" type="text" class="form-control validate[required,custom[onlyLetterSp],minSize[3],maxSize[30]]" value="">
+									</div>
+									<div class="form-group">
+										<label>Email</label>
+										<input name="txtEmail" type="email" class="form-control validate[required, custom[email]]" value="">
+										<div class="formSmExtLine mailExt">*Please make sure the Email ID shared from your end is valid.</div>
+									</div>
+									<div class="form-group">
+										<label>Phone Number</label>
+										<input name="txtPhone" type="text" class="form-control validate[required ,custom[phone] , minSize[10] , maxSize[12]]" value="">
+									</div>
+									<div class="form-group">
+										<label>Company</label>
+										<input name="txtCompany" type="text" class="form-control validate[required]" value="">
+									</div>
+									<div class="form-group">
+										<label>Website</label>
+										<input name="txtUrl" type="text" class="form-control validate[required,custom[urlmine]]" value="">
+									</div>
+							
+									<div class="form-group">
+										<label>Your Message</label>
+										<textarea name="txtMessage" class="form-control validate[required]"></textarea>
+									</div>
+									<!-- <div class="form-group">
+											<label>Security</label>
+											<div class="capchapic col-lg-7 col-md-8 col-sm-8 col-xs-8 noPad">
+												<script src='https://www.google.com/recaptcha/api.js'></script>
+												<div class="g-recaptcha" data-sitekey="6Le1nT0UAAAAAEZRy5RhVCj9rig8QCyRjzfmIdVU"></div>
+											</div>
+										</div> -->
+									<button type="submit" class="btn btn-default">Send Message
+										<i class="fa fa-angle-double-right ctnBtn" aria-hidden="true"></i>
+									</button>
+								</form>
+							</div><!-- END OF FORM -->
+
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock contact %} 
+{% block footer %}{% include 'home/footer-section.html' %}{% endblock footer %}

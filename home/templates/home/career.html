@@ -1,0 +1,546 @@
+ {% load static %}
+
+<body class="reviews">
+
+  <div class="defineFloat mobStickyBar">
+    <ul class="list-unstyled">
+      <li class="sPhone">
+        <a href="tel:+1(646)-808-0229"></a>
+      </li>
+      <li class="sMail">
+        <span class="salesEmail"></span>
+      </li>
+      <li class="sCal">
+        <a data-toggle="modal" data-target="#myModal" title="Online Cost Calculator" href="javascript:void(0);"></a>
+      </li>
+    </ul>
+  </div>
+  <p id="back-top" style="display: block;">
+    <a href="#top">
+      <img src="images/toparrow.png" alt="" class="img-responsive" />
+    </a>
+  </p>
+
+  <section class="defineFloat" id="onlineCostPop">
+    <!-- POP UP ONLINE COST -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog uncompeletOuterBox" role="document">
+        <div class="modal-content">
+
+          <button type="button" class="close exitBtn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <img src="images/exit-arrow.png" class="img-responsive" alt="" />
+            </span>
+          </button>
+
+          <div class="modal-body">
+            <div class="col-sm-12 col-xs-12 noPad onlineCostLeftOuterOut uncompeletBox">
+              <div class="pupUptext">
+                <h5>We are upgrading our Online Cost Calculator with more features and it shall be back soon. In the meantime,
+                  you can
+                  <a href="get-a-quote.html">Get a Quote</a> here.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- POP UP ONLINE COST END -->
+  </section>
+
+  <!-- popUp -->
+
+  <section class="defineFloat onlineCostThree" id="onlineCostThree">
+
+    <!-- Modal -->
+    <div class="modal fade stepFormSection" id="myModal1" tabindex="-1" role="dialog">
+      <div class="modal-dialog stepformSection" role="document">
+        <div class="modal-content closeBtn">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <img src="images/close-btn.png" alt="Close Button" />
+            </span>
+          </button>
+          <div class="modal-body">
+            <div class="col-sm-12 col-xs-12 text-center onlineForm changeBackground">
+              <!-- multistep form -->
+              <div class="onlineFormInner defineFloat boxWidth customPosition">
+
+                <!-- progressbar -->
+                <div class="fixProgress defineFloat customPosition">
+                  <div id="progressBar" class="customPosition">
+                    <!-- <h6 class="headingActive hide" id="stepcnt2" value="1">Step 1</h6> -->
+                    <h6 class="headingActive hide" id="stepcnt2">Step 1</h6>
+                  </div>
+                  <ul class="list-unstyled lineWidth customPosition fulllineWidth hide">
+                    <li class="active">
+                      <span></span>
+                    </li>
+                    <li>
+                      <span></span>
+                    </li>
+                    <li>
+                      <span></span>
+                    </li>
+                    <li>
+                      <span></span>
+                    </li>
+                    <li>
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- fieldsets -->
+
+                <fieldset id="first">
+                  <form id="footer_domain_validate" class="regform" method="post">
+                    <div class="fieldsetInner customWidth topPadding">
+                      <div class="col-sm-12 col-xs-12 noPad text-center onlineCostLeftOuterFirst customPositionTitle">
+                        <h2>Get a FREE Audit of your Website</h2>
+                        <div class="descriptionPopup">We’ll provide you with detailed metrics &amp; statistics to help you take the right decisions.</div>
+                        <div class="defineFloat divide text-center">
+                          <hr>
+                        </div>
+                      </div>
+                      <div class="poupMail fieldsetInner customWidth">
+                        <input placeholder="Enter your URL or Domain name." class="validate[required,custom[urlmine]]" name="txtDomainURL" id="txtDomainURL"
+                          value="" type="text">
+                      </div>
+                      <input type="button" id="nextButton" name="next" class="next_btn nextbtn" value="Next" />
+                      <span class="frwArrow"></span>
+                    </div>
+                  </form>
+                </fieldset>
+
+
+
+                <fieldset>
+                  <form id="footer_FormValues_validate" class="regform" method="post">
+                    <div class="containermessage get_startedPOPup">
+                      <p></p>
+                    </div>
+                    <div class="fieldsetInner customWidth topPadding innerFieldSet">
+                      <div class="col-sm-12 col-xs-12 noPad text-center onlineCostLeftOuterFirst customPositionTitle">
+                        <h2 class="title">Please fill in the details and we shall send you the report once ready:</h2>
+                        <div class="defineFloat divide text-center">
+                          <hr>
+                        </div>
+                      </div>
+                      <div class="fieldsetInner customWidthAdd">
+                        <div class="fullForm">
+                          <div class="popupField">
+                            <input placeholder="Name" class="validate[required,custom[onlyLetterSp],minSize[3],maxSize[30]]" id="username" name="name"
+                              type="text">
+                          </div>
+                          <div class="popupField">
+                            <input placeholder="Email" class="validate[required, custom[email]]" id="emailid" name="email" type="text">
+                          </div>
+                          <div class="popupField">
+                            <input placeholder="Phone Number" class="validate[required ,custom[phone] , minSize[10] , maxSize[12]]" id="phone" name="phone"
+                              type="text">
+                          </div>
+                          <div class="popupField">
+                            <select class="validate[required]" id="servicesweb" name="servicesweb">
+                              <option value=" ">Select Services</option>
+                              <option value="Search Engine Optimization">Search Engine Optimization</option>
+                              <option value="Pay Per Click Management">Pay Per Click Management</option>
+                              <option value="Online Reputation Management">Online Reputation Management</option>
+                              <option value="Link Building">Link Building</option>
+                              <option value="Social Media Marketing">Social Media Marketing</option>
+                              <option value="Content Development">Content Development</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="emailField popupField fieldsetInner customWidthAdd">
+                        <input placeholder="www.dummyaddress.com" class="validate[required,custom[urlmine]]" id="domain" name="domain" type="text">
+                      </div>
+                      <div class="emailField popupField fieldsetInner customWidthAdd">
+                        <textarea placeholder="message" class="validate[required]" id="message" name="message"></textarea>
+                      </div>
+
+                    </div>
+                    <div class="emailField customWidthAdd auditPadlaft">
+                      <div class="capchaCode popupField">
+                        <input type="hidden" name="p1" id="p1" value="1" />
+                        <input type="hidden" name="p2" id="p2" value="5" />
+
+                        <input class="validate[required]" placeholder="captcha 1 + 5 =" id="captcha" name="Captcha" type="text">
+                      </div>
+                      <div class="submitBtn popupField">
+                        <a class="next_btn freeAuditBtn">Submit
+                          <span class="nxtArrow"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </fieldset>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- POP UP ONLINE COST END -->
+  </section>
+
+
+
+  <!-- end popUp -->
+
+
+  <header class="defineFloat nav-down">
+    <div class="defineFloat topBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 renoPad">
+            <ul class="list-unstyled">
+              <li>
+                <span>Have a question? Contact Us.</span>
+                <a href="javascript:void(0);">
+                  <i class="fa fa-phone" aria-hidden="true"></i> +1(646)-808-0229</a>
+              </li>
+              <li>
+                <span class="salesEmail"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="defineFloat midBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-6 logo">
+            <a href="http://www.seoexpertsindia.com/">
+              <img src="images/logo.png" class="img-responsive" alt="" title="SEO Experts India" />
+            </a>
+          </div>
+          <div class="col-sm-9 col-md-9 col-xs-12 menu_outer">
+            <nav class="navbar navbar-default">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <img src="images/mobCalcIcon.png" class="img-responsive" alt="" data-toggle="modal" data-target="#myModal" />
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                  aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="example-one">
+                  <li class="">
+                    <a href="http://www.seoexpertsindia.com/">Home</a>
+                  </li>
+                  <li class="menuOneTT aboutTip">
+                    <a href="about-us.html" title="About">About</a>
+                    <span class="toolTipxt" style="padding: 8px 10px 8px 5px; width:332px;">Read more about our company and find out why are different from other SEO firms & agencies in India.</span>
+                  </li>
+                  <li class=" dropmenu ">
+                    <a href="digital-marketing-services.html" title="">Services</a>
+                    <span>
+                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                    <ul class="dropdown-menu">
+                      <li class="subMenuTT">
+                        <a href="seo-services.html" title="seo-services">Search Engine Optimization</a>
+                        <span class="toolTipxt" style="width:270px;">Rank at the top of Organic Search Results (SERPs) and dominate your competition.</span>
+                      </li>
+                      <li class="subMenuTT">
+                        <a href="ppc-management-services.html" title="Pay Per Click Management ">PPC Management Services</a>
+                        <span class="toolTipxt">Be found, where your customers are searching, through Google Adwords and Bing/Yahoo pay-per-click
+                          ads.</span>
+                      </li>
+                      <li class=" subMenuTT">
+                        <a href="link-building-services.html">Link Building Solutions</a>
+                        <span class="toolTipxt" style="width:310px;">Get relevant & high authority backlinks for your off-page campaigns. Sign up for our backlinking
+                          program today OR purchase links à la carte. </span>
+                      </li>
+                      <li class="subMenuTT">
+                        <a href="online-reputation-management.html" title="Online Reputation Management">Online Reputation Management (ORM)</a>
+                        <span class="toolTipxt" style="width:300px;">Not only we can help you clean your online reputation, but also we can effectively build your positive
+                          reputation online.
+                          <a href="online-reputation-management.html" title="">Learn More >></a>
+                        </span>
+                      </li>
+                      <li class="subMenuTT">
+                        <a href="social-media-marketing.html" title="Social Media Marketing">Social Media Marketing (SMM)</a>
+                        <span class="toolTipxt" style="width:365px;">Beat the competition on all of LinkedIn, Facebook, Twitter and YouTube with our professional & affordable
+                          Social Media Optimization & Advertising services.</span>
+                      </li>
+                      <li class="submenulist subMenuTT">
+                        <a href="content-writing-services.html" title="Content Development">Content Development Services</a>
+                        <span class="toolTipxt" style="width:395px;">Get professional & creative copy written by our team of writers, that is engaging, well optimised
+                          and seo friendly.</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menuOneTT rankTip">
+                    <a href="ranking.html" title="Rankings">Rankings</a>
+                    <span class="toolTipxt" style="width:285px;">See some of our top ranking projects and the results we have acheived for our clients.</span>
+                  </li>
+                  <li class=" menuOneTT pakTip">
+                    <a href="seo-packages.html">Packages</a>
+                    <span class="toolTipxt" style="width:340px;">Affordable SEO plans & packages to suit your monthly budget.
+                      <a href="seo-packages.html" title="">Compare our SEO Plans Now >></a>
+                    </span>
+                  </li>
+                  <li class="menuOneTT reviewTip">
+                    <a href="reviews.html" title="Reviews">Reviews</a>
+                    <span class="toolTipxt" style="width:212px;">A List of recommendations
+                      <br>& testimonials from our clients.</span>
+                  </li>
+                  <li class="menuOneTT contactTip">
+                    <a href="get-in-touch.html" title="Contact">Contact</a>
+                    <span class="toolTipxt" style="width:285px;">Get in touch with us today and find out how we can help you grow your business.</span>
+                  </li>
+                  <li class="lastChild onlineButtonTT">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                      <rect rx="2" ry="2" class="shape" height="100%" width="100%" />
+                    </svg>
+                    <a data-toggle="modal" data-target="#myModal" title="Online Cost Calculator">
+                      <span>Online Cost</span>
+                      <br/> Calculator
+                    </a>
+                    <span class="toolTipxt" style="width:385px;">Our online cost calculator is the quickest way to get a rough idea of pricing for your Online Marketing
+                      Campaigns.</span>
+                  </li>
+                </ul>
+                <div class="defineFloat mobPhone">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="tel:+1(646)-808-0229">
+                        <img src="images/phonePop.png" class="img-responsive" alt="" />+1(646)-808-0229</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <img src="images/mailPop.png" class="img-responsive" alt="">
+                        <span class="salesEmail"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.navbar-collapse -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="sliderInner" class="defineFloat commonSlider formbannerArrow">
+    <h4 class="hide">removing error</h4>
+    <!--img src="images/getInTouch.jpg" class="img-responsive" alt="" /-->
+  </section>
+
+  <section class="defineFloat career" id="getInTouch">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12 text-center getHeading wow fadeIn">
+          <h2 class="wow onloadEffect">Career
+            <span>@</span> SEO Experts India</h2>
+
+          <div class="col-sm-12 col-xs-12 text-center opHeadingCareer wow onloadEffect">
+            <p>We are always in search of innovative & bright minds who can command
+              <br> the fast moving technology market</p>
+          </div>
+          <hr class="onloadEffect wow">
+          <p class="text-justify">SEO Experts India is an
+            <span class="colorTheme">ISO 9001:2008 Certified Company</span> with an extreme focus on quality of work! Since our inception, we have
+            delivered high quality & cost SEO Services to clients from diverse industry segments in over
+            <span class="colorTheme">20+ countries worldwide</span>. We have around 7+ years of experience in the field of SEO & Internet Marketing
+            and
+            <span class="colorTheme">15+ business partners</span> around the world. Our ethos is quality over quantity & we always aim to deliver
+            every new project with higher quality standards as compared to the previous one delivered.</p>
+          <p class="text-justify">At SEO Experts India, we are constantly looking to bring quality professionals on board to join our family and
+            enhance our abilities. We take pride in being able to identify individuals with incredible talent for a design
+            or programming career. With fun, enthusiasm and continual innovation as essential components of our web development
+            careers, our work environment is best defined as
+            <span class="colorTheme">'bustling with creativity & innovation'</span>. Apart from strong logical, analytical and problem-solving capabilities,
+            we look individuals who are dedicated, self-motivated, passionate and have the desire to write great code.</p>
+          <p class="text-justify">Salary and benefits offered by SEO Experts India are attractive & very competitive in the market and we assure
+            to provide an ethical, challenging, work pressure free and professionally stimulating work environment that values
+            ethics and determination to succeed.</p>
+          <div class="sparaterLineFw wow zoomIn"></div>
+        </div>
+
+
+        <div id="contForm" class="col-sm-12 col-xs-12 text-center careerApply wow fadeIn">
+
+          <h2>Join Our Team</h2>
+          <p class="text-justify">You can send your updated resume in MS-Word or PDF format to
+            <span class="careerEmail"></span> us with a beautifully written cover letter. Please make sure you mention the position applied for in
+            the subject line of the email. We will assess your capability through your résumé and contact you if we find
+            you suitable for our team.</p>
+          <p>You can also contact us with any of your recruitment related queries at
+            <span class="careerEmail"></span> or 0172 4014132.</p>
+        </div>
+        <div class="col-sm-12 col-xs-12 getOuter">
+          <div class="col-sm-12 col-xs-12">
+            <div class="defineFloat getOut">
+              <div class="col-md-8 col-sm-7 col-xs-12 noPad getLeft">
+                <form class="contactPageform" id="mainform" method="post" enctype="multipart/form-data">
+
+                  <div class="form-group">
+                    <label>First Name</label>
+                    <input value="" name="first_name" title="First Name" type="text" placeholder="First Name" class="validate[required]">
+                  </div>
+                  <div class="form-group">
+                    <label>Last Name</label>
+                    <input value="" name="last_name" title="Last Name" type="text" placeholder="Last Name" class="validate[required]">
+                  </div>
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input value="" name="email" class="validate[required, custom[email]]" title="Email" type="text" placeholder="Email">
+                    <div class="formSmExtLine mailExt">*Please make sure the Email ID shared from your end is valid.</div>
+                  </div>
+                  <div class="form-group">
+                    <label>Position In</label>
+                    <select id="position" name="position" class="form-control textfeild validate[required]">
+                      <option class="lightColor" value="">Position In</option>
+                      <option value="Programming">Programming</option>
+                      <option value="Web Design">Web Design</option>
+                      <option value="SEO">SEO</option>
+                      <option value="Sales">Sales</option>
+                      <option value="QA">QA</option>
+                      <option value="HR">HR</option>
+                      <option value="Mobile Development">Mobile Development</option>
+                      <option value="Networking">Networking</option>
+                      <option value="Front Office">Front Office</option>
+                      <option value="Office Administration">Office Administration</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Experience</label>
+                    <select id="experience" name="experience" class="form-control textfeild validate[required]">
+                      <option class="lightColor" value="">Experience</option>
+                      <option value="&lt; 1 year">&lt;1 year</option>
+                      <option value="1-2 years">1-2 years</option>
+                      <option value="2-4 years">2-4 years</option>
+                      <option value="4-6 years">4-6 years</option>
+                      <option value="&gt; 6 years">&gt;6 years </option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Phone Number</label>
+                    <input value="" class="validate[required ,custom[phone] , minSize[10] , maxSize[12]]" title="Phone" type="text" name="phone"
+                      placeholder="Phone">
+                  </div>
+                  <div class="form-group">
+                    <label>Upload</label>
+                    <input class="validate[required,funcCall[checkpoint]" name="careerFile" type="file">
+                  </div>
+                  <div class="form-group">
+                    <label>CTC</label>
+                    <input value="" class="validate[required]" title="CTC" name="ctc" type="text" placeholder="CTC">
+                  </div>
+                  <div class="form-group">
+                    <label>Location</label>
+                    <input value="" class="validate[required]" title="Location" type="text" name="location" placeholder="Location">
+                  </div>
+                  <div class="form-group">
+                    <label>Cover Letter</label>
+                    <textarea class="validate[required]" placeholder="Cover Letter" name="cover_letter"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label>Security</label>
+                    <div class="capchapic col-lg-7 col-md-8 col-sm-8 col-xs-8 noPad">
+                      <script src='https://www.google.com/recaptcha/api.js'></script>
+                      <div class="g-recaptcha" data-sitekey="6Le1nT0UAAAAAEZRy5RhVCj9rig8QCyRjzfmIdVU"></div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-default applyBtn">Apply Now
+                    <i class="fa fa-angle-double-right ctnBtn" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+
+              <div class="col-md-4 col-sm-5 col-xs-12 getRight">
+                <div class="defineFloat getRightOut">
+                  <div class="defineFloat getRightIn">
+                    <h3>If you prefer a more tangible
+                      <br> form of communication we're here:</h3>
+                    <hr>
+                    <div class="defineFloat sameCode">
+                      <p>Chandigarh Office:</p>
+                      <span>J-7, Level-2, Rajiv Gandhi Information
+                        <br> Technology (IT) Park, Chandigarh </span>
+                    </div>
+                    <div class="defineFloat sameCode">
+                      <p>Mohali Office:</p>
+                      <span> A-603, Bestech Business Tower
+                        <br> Level 6, Sector-66, Mohali</span>
+                    </div>
+                    <div class="defineFloat sameCode">
+                      <p>Contact Us:</p>
+                      <ul class="list-unstyled">
+                        <li>+1(646)-808-0229
+                          <img src="images/gf1.png" class="img-responsive" alt="" />
+                        </li>
+                        <li>+44(203)-239-0229
+                          <img src="images/gf2.png" class="img-responsive" alt="" />
+                        </li>
+                        <li>+61(280)-033-110
+                          <img src="images/fla4.png" class="img-responsive" alt="" />
+                        </li>
+                        <li>+91(893)-099-9945
+                          <img src="images/GF3.png" class="img-responsive" alt="" />
+                        </li>
+                        <li>
+                          <span class="infoEmail"> </span>
+                        </li>
+                        <li>
+                          <span class="salesEmail"> </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="defineFloat sameCode">
+                      <p>For HR and other enquiries:</p>
+                      <ul class="list-unstyled">
+                        <li>+91 172 4001105
+                          <img src="images/GF3.png" class="img-responsive" alt="" />
+                        </li>
+                        <li>+91 172 4014132
+                          <img src="images/GF3.png" class="img-responsive" alt="" />
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="defineFloat sameCode last-child">
+                      <p>More options to reach us:</p>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="get-in-touch.html">Get in Touch
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="get-a-quote.html">Get a Quote
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="request-for-proposal.html">Request a Proposal
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

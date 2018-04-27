@@ -1,0 +1,42 @@
+ {% load static %}
+
+<section id="higherRating" class="defineFloat">
+  <div class="container" id="contForm">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 formOuter wow fadeIn">
+        <div class="defineFloat text-center">
+          <h2> for all your trading needs
+            <span> Contact Us Today!</span>
+          </h2>
+          <p>Call us:
+            <a href="{% url 'contact' %}" title="+254 (0)20 2004959">+254 (0)20 2004959</a>, email us:
+            <span class="salesEmail"></span> OR just fill up the form below. </p>
+        </div>
+        <form class="contactPageform" id="mainMobileform" method="post">
+          <div class="containermessage">
+            <p></p>
+          </div>
+          <div class="form-group col-sm-4 col-xs-4">
+            <input id="exampleInputName1" value="" name="txtName" type="text" class="form-control validate[required,custom[onlyLetterSp],minSize[3],maxSize[30]]"
+              placeholder="Name" autocomplete="off">
+          </div>
+          <div class="form-group col-sm-4 col-xs-4">
+            <input id="exampleInputEmail1" value="" name="txtEmail" type="email" class="form-control validate[required, custom[email]]"
+              placeholder="Email" autocomplete="off">
+          </div>
+          <div class="form-group col-sm-4 col-xs-4">
+            <input id="exampleInputNumber1" value="" name="txtPhone" type="text" class="form-control validate[required ,custom[phone] , minSize[10] , maxSize[12]]"
+              placeholder="Phone(With Country &amp; AreaCode)" autocomplete="off">
+          </div>
+          <div class="form-group col-sm-12 col-xs-12">
+            <textarea name="txtMessage" class="form-control validate[required]" placeholder="Your Message">			</textarea>
+          </div>
+          <div class="form-group submit col-sm-12 col-xs-12">
+            <button type="submit" class="btn btn-default">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</div>

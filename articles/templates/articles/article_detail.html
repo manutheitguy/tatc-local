@@ -1,0 +1,42 @@
+{% extends 'home/base.html' %}
+{% load static %}
+<body class="home  pace-done">
+{% block nav %}{% include 'home/nav-section.html' %}{% endblock nav %}
+
+{% block detail %} 
+<div class="container-fluid articles-body">
+<div class="container">
+    <div class="article-detail">
+        <div class="article">
+            <div class="row">
+                <div class="col-md-6 article-img detail-img">
+                    <img class="article-img" src="{{ article.thumb.url }}" alt="article thumbnail">
+                </div>
+                <div class="col-md-6 pt-4 article-txt detail-txt">
+                    <div class="pb-2">
+                        <h2>{{ article.title }}</h2>
+                    </div>
+                    <div class="p-2">
+                        <p>Author: {{ article.author }}</p>
+                    </div>
+                    <div class="p-2">
+                        <p>Published on: {{ article.date }}</p>
+                    </div>
+                    <div class="p-2">
+                        <p>Summary: {{ article.snippet }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mt-5 article-txt detail-body">
+                    <div class="detail-body">
+                        <p>{{ article.body }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock detail %} 
+{% block footer %}{% include 'home/footer-section.html' %}{% endblock footer %}

@@ -1,0 +1,69 @@
+@keyframes pulsate{0%{transform:scale(0.1);opacity:0;}
+50%{opacity:1;}
+100%{transform:scale(1.2);opacity:0;}
+}
+.pin{background:hsl(210, 62%, 50%);border:1px solid hsl(0, 0%, 100%);border-radius:50%;height:12px;left:9px;position:relative;top:9px;width:12px;z-index:1000;}
+.pin-effect1{animation:1800ms ease-out infinite pulsate !important;}
+.pin-effect2{animation:2000ms ease-out infinite pulsate !important;}
+.pin-effect3{animation:2200ms ease-out infinite pulsate !important;}
+.pin-effect4{animation:1600ms ease-out infinite pulsate !important;}
+.pin-effect5{animation:1800ms ease-out infinite pulsate !important;}
+.pin-effect6{animation:2000ms ease-out infinite pulsate !important;}
+.pin-effect7{animation:2200ms ease-out infinite pulsate !important;}
+.pin-effect8{animation:2400ms ease-out infinite pulsate !important;}
+.pin-effect9{animation:1600ms ease-out infinite pulsate !important;}
+.pin-effect10{animation:1800ms ease-out infinite pulsate !important;}
+.pin-effect11{animation:2000ms ease-out infinite pulsate !important;}
+.pin-effect12{animation:2200ms ease-out infinite pulsate !important;}
+.pin-effect13{animation:2400ms ease-out infinite pulsate !important;}
+.pin-effect14{animation:2600ms ease-out infinite pulsate !important;}
+.pin-effect15{animation:1800ms ease-out infinite pulsate !important;}
+.pin-effect16{animation:2000ms ease-out infinite pulsate !important;}
+.pin-effect17{animation:2200ms ease-out infinite pulsate !important;}
+.pin-effect18{animation:2400ms ease-out infinite pulsate !important;}
+.pin-effect19{animation:1800ms ease-out infinite pulsate !important;}
+.pin-effect20{animation:2000ms ease-out infinite pulsate !important;}
+.pin-effect21{animation:2200ms ease-out infinite pulsate !important;}
+.pin-effect22{animation:2400ms ease-out infinite pulsate !important;}
+.pin-effect23{animation:1800ms ease-out infinite pulsate !important;}
+.pin-effect24{animation:2000ms ease-out infinite pulsate !important;}
+.pin-effect25{animation:2200ms ease-out infinite pulsate !important;}
+.pin-effect26{animation:1800ms ease-out infinite pulsate !important;}
+.pin-effect27{animation:2000ms ease-out infinite pulsate !important;}
+.pin-effect{background:#99d3fa;border-radius:50%;display:block;height:30px;opacity:0;position:absolute;top:0;width:30px;}
+.marker{position:absolute;}
+.marker.marker1{margin-left:2%;top:16%;}
+.marker.marker2{margin-left:13%;top:12%;}
+.marker.marker3{margin-left:18%;top:16%;}
+.marker.marker4{margin-left:9%;top:24%;}
+.marker.marker5{margin-left:13.5%;top:24%;}
+.marker.marker6{margin-left:18%;top:25%;}
+.marker.marker7{margin-left:26.5%;top:26%;}
+.marker.marker8{margin-left:17%;top:36%;}
+.marker.marker9{margin-left:16%;top:44%;}
+.marker.marker10{margin-left:21%;top:52%;}
+.marker.marker11{margin-left:24%;top:59%;}
+.marker.marker12{margin-left:48%;top:15%;}
+.marker.marker13{margin-left:54%;top:12%;}
+.marker.marker14{margin-left:53%;top:19%;}
+.marker.marker15{margin-left:57%;top:19%;}
+.marker.marker16{margin-left:60%;top:19%;}
+.marker.marker17{margin-left:45%;top:27%;}
+.marker.marker18{margin-left:51%;top:25%;}
+.marker.marker19{margin-left:53%;top:26%;}
+.marker.marker20{margin-left:42%;top:33%;}
+.marker.marker21{margin-left:66%;top:39%;}
+.marker.marker22{margin-left:50%;top:58%;}
+.marker.marker23{margin-left:77%;top:35%;}
+.marker.marker24{margin-left:87%;top:62%;}
+.marker.marker25{margin-left:85%;top:73%;}
+.marker.marker26{margin-left:89%;top:80%;}
+.marker.marker27{margin-left:97%;top:82%;}
+.mapNormal.resMap{display:none;}
+.mapPic{margin:0 auto;max-width:725px;position:relative;}
+@media(min-width:767px) and (max-width:1024px){.mapPic .mapNormal{width:100%;}
+}
+@media(max-width:767px){.mapNormal.deskMap{display:none;}
+.mapNormal.resMap{display:block;width:100%;}
+.marker{display:none;}
+}

@@ -1,0 +1,46 @@
+
+{% load static %}
+
+<body class="home preload preLoaderBlock">
+
+  <div class="home">
+    <section id="slider" class="defineFloat indexBanner">
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="{% static 'home/images/slider.jpg' %}" alt="...">
+            <div class="homeBannerExt wow onloadEffect  fadeIn" style="visibility: visible;">
+              <span>Trans-Atlantic Trading Company</span>
+              <h2>Your Ultimate Business Partner</h2>
+              <p>We help businesses get what they need to succeed.</p>
+              <div class="slideButton">
+                <a href="#exports" id="jQueryButtons1" class="btn btn-primary blue">Our Exports</a>
+                <a href="#imports" class="btn btn-primary yellow">Our Imports</a>
+              </div>
+            </div>
+            <div class="scroll">
+              <a href="#who">
+                <span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="defineFloat" id="online">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12 ormReputation"><h1>We Are The Best Trading Agency in Kenya</h1> </div>
+      </div>
+    </div>
+  </section>
+  

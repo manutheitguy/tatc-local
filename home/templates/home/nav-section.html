@@ -1,0 +1,411 @@
+ {% load static %}
+
+<div style="position:fixed;top:0px;left:0px;width:0;height:0;" id="scrollzipPoint"></div>
+<div id="lhc_status_container">
+  <div id="lhc_need_help_container" style="margin-left:-80px;">
+    <span id="lhc_need_help_triangle" style="right:15px;"></span>
+    <a id="lhc_need_help_close" title="Close" onclick="return lh_inst.lhc_need_help_hide();" href="{% url 'index' %}">×</a>
+    <div onclick="return lh_inst.lhc_need_help_click();" id="lhc_need_help_image">
+      <img src="{% static 'home/images/239b28bfd45ea8dfa1a3b63a8ca21ae7.jpg' %}" width="60" height="60">
+    </div>
+    <div onclick="return lh_inst.lhc_need_help_click();" id="lhc_need_help_main_title">Need help?</div>
+    <span onclick="return lh_inst.lhc_need_help_click();" id="lhc_need_help_sub_title">Our staff is always ready to help</span>
+  </div>
+  <a id="online-icon" class="status-icon" href="{% url 'index' %}" onclick="return lh_inst.lh_openchatWindow()">Chat - Comming Soon</a>
+</div>
+<div class="pace  pace-inactive" style="display: none;">
+  <div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99"></div>
+
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div>
+</div>
+
+
+<div class="testHidden">
+  <div class="preloader">
+    <img src="{% static 'home/images/sei-loader.png' %}" class="" alt="">
+  </div>
+</div>
+<div class="defineFloat mobStickyBar">
+  <ul class="list-unstyled">
+    <li class="sPhone">
+      <a href="tel:+254 (0)20 2004959"></a>
+    </li>
+    <li class="sMail">
+      <span class="salesEmail">
+        <a href="mailto:info@tatc.co.ke">
+          <i class="fa fa-envelope" aria-hidden="true"></i>info@tatc.co.ke</a>
+      </span>
+    </li>
+    <li class="sCal">
+      <a data-toggle="modal" data-target="#myModal" title="" href="{% url 'index' %}" data-original-title="Online Cost Calculator"></a>
+    </li>
+  </ul>
+</div>
+<p id="back-top" style="display: none;">
+  <a href="#top">
+    <img src="{% static 'home/images/toparrow.png' %}" alt="" class="img-responsive">
+  </a>
+</p>
+
+<section class="defineFloat" id="onlineCostPop">
+  <!-- POP UP ONLINE COST -->
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog uncompeletOuterBox" role="document">
+      <div class="modal-content">
+
+        <button type="button" class="close exitBtn" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="{% static 'home/images/exit-arrow.png' %}" class="img-responsive" alt="">
+          </span>
+        </button>
+
+        <div class="modal-body">
+          <div class="col-sm-12 col-xs-12 noPad onlineCostLeftOuterOut uncompeletBox">
+            <div class="pupUptext">
+              <h5>We are upgrading our Online Cost Calculator with more features and it shall be back soon. In the meantime,
+                you can
+                <a href="{% url 'index' %}">Get a Quote</a> here.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- POP UP ONLINE COST END -->
+</section>
+
+<!-- popUp -->
+
+<section class="defineFloat onlineCostThree" id="onlineCostThree">
+
+  <!-- Modal -->
+  <div class="modal fade stepFormSection" id="myModal1" tabindex="-1" role="dialog">
+    <div class="modal-dialog stepformSection" role="document">
+      <div class="modal-content closeBtn">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="{% static 'home/images/close-btn.png' %}" alt="Close Button">
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="col-sm-12 col-xs-12 text-center onlineForm changeBackground">
+            <!-- multistep form -->
+            <div class="onlineFormInner defineFloat boxWidth customPosition">
+
+              <!-- progressbar -->
+              <div class="fixProgress defineFloat customPosition">
+                <div id="progressBar" class="customPosition">
+                  <!-- <h6 class="headingActive hide" id="stepcnt2" value="1">Step 1</h6> -->
+                  <h6 class="headingActive hide" id="stepcnt2">Step 1</h6>
+                </div>
+                <ul class="list-unstyled lineWidth customPosition fulllineWidth hide">
+                  <li class="active">
+                    <span></span>
+                  </li>
+                  <li>
+                    <span></span>
+                  </li>
+                  <li>
+                    <span></span>
+                  </li>
+                  <li>
+                    <span></span>
+                  </li>
+                  <li>
+                    <span></span>
+                  </li>
+                </ul>
+              </div>
+              <!-- fieldsets -->
+
+              <fieldset id="first">
+                <form id="footer_domain_validate" class="regform" method="post">
+                  <div class="fieldsetInner customWidth topPadding">
+                    <div class="col-sm-12 col-xs-12 noPad text-center onlineCostLeftOuterFirst customPositionTitle">
+                      <h2>Get a FREE Audit of your Website</h2>
+                      <div class="descriptionPopup">We’ll provide you with detailed metrics &amp; statistics to help you take the right decisions.</div>
+                      <div class="defineFloat divide text-center">
+                        <hr>
+                      </div>
+                    </div>
+                    <div class="poupMail fieldsetInner customWidth">
+                      <input placeholder="Enter your URL or Domain name." class="validate[required,custom[urlmine]]" name="txtDomainURL" id="txtDomainURL"
+                        type="text">
+                    </div>
+                    <input id="nextButton" name="next" class="next_btn nextbtn" value="Next" type="button">
+                    <span class="frwArrow"></span>
+                  </div>
+                </form>
+              </fieldset>
+
+
+
+              <fieldset>
+                <form id="footer_FormValues_validate" class="regform" method="post">
+                  <div class="containermessage get_startedPOPup">
+                    <p></p>
+                  </div>
+                  <div class="fieldsetInner customWidth topPadding innerFieldSet">
+                    <div class="col-sm-12 col-xs-12 noPad text-center onlineCostLeftOuterFirst customPositionTitle">
+                      <h2 class="title">Please fill in the details and we shall send you the report once ready:</h2>
+                      <div class="defineFloat divide text-center">
+                        <hr>
+                      </div>
+                    </div>
+                    <div class="fieldsetInner customWidthAdd">
+                      <div class="fullForm">
+                        <div class="popupField">
+                          <input placeholder="Name" class="validate[required,custom[onlyLetterSp],minSize[3],maxSize[30]]" id="username" name="name"
+                            type="text">
+                        </div>
+                        <div class="popupField">
+                          <input placeholder="Email" class="validate[required, custom[email]]" id="emailid" name="email" type="text">
+                        </div>
+                        <div class="popupField">
+                          <input placeholder="Phone Number" class="validate[required ,custom[phone] , minSize[10] , maxSize[12]]" id="phone" name="phone"
+                            type="text">
+                        </div>
+                        <div class="popupField">
+                          <select class="validate[required]" id="servicesweb" name="servicesweb">
+                            <option value=" " selected="selected">Select Services</option>
+                            <option value="Premium Kenyan Tea">Premium Kenyan Tea</option>
+                            <option value="Pay Per Click Management">Pay Per Click Management</option>
+                            <option value="Online Reputation Management">Online Reputation Management</option>
+                            <option value="Link Building">Link Building</option>
+                            <option value="Social Media Marketing">Social Media Marketing</option>
+                            <option value="Content Development">Content Development</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="emailField popupField fieldsetInner customWidthAdd">
+                      <input placeholder="www.dummyaddress.com" class="validate[required,custom[urlmine]]" id="domain" name="domain" type="text">
+                    </div>
+                    <div class="emailField popupField fieldsetInner customWidthAdd">
+                      <textarea placeholder="message" class="validate[required]" id="message" name="message"></textarea>
+                    </div>
+
+                  </div>
+                  <div class="emailField customWidthAdd auditPadlaft">
+                    <div class="capchaCode popupField">
+                      <input name="p1" id="p1" value="8" type="hidden">
+                      <input name="p2" id="p2" value="4" type="hidden">
+
+                      <input class="validate[required]" placeholder="captcha 8 + 4 =" id="captcha" name="Captcha" type="text">
+                    </div>
+                    <div class="submitBtn popupField">
+                      <a class="next_btn freeAuditBtn">Submit
+                        <span class="nxtArrow"></span>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+
+              </fieldset>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- POP UP ONLINE COST END -->
+</section>
+
+
+
+<!-- end popUp -->
+
+
+<header class="defineFloat nav-down">
+  <div class="defineFloat topBar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 renoPad">
+          <ul class="list-unstyled">
+            <li>
+              <span>Have a question? Contact Us.</span>
+              <a href="{% url 'index' %}">
+                <i class="fa fa-phone" aria-hidden="true"></i> +254 (0)20 2004959</a>
+            </li>
+            <li>
+              <span class="salesEmail">
+                <a href="mailto:info@tatc.co.ke">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>info@tatc.co.ke</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="defineFloat midBar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-6 logo">
+          <a href="{% url 'index' %}">
+            <img src="{% static 'home/images/logo1.png' %}" class="img-responsive" alt="" title="SEO Experts India">
+          </a>
+        </div>
+        <div class="col-sm-9 col-md-9 col-xs-12 menu_outer">
+          <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <img src="{% static 'home/images/mobCalcIcon.png' %}" class="img-responsive" alt="" data-toggle="modal" data-target="#myModal">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav" id="example-one">
+                <li class="active current_page_item">
+                  <a href="{% url 'index' %}" style="">Home</a>
+                </li>
+
+                <li class="menuOneTT aboutTip">
+                  <a href="{% url 'about' %}" title="" data-original-title="About">About</a>
+                </li>
+
+                <li class=" dropmenu ">
+                  <a href="{% url 'exports' %}" title="" data-original-title="">Exports</a>
+                  <span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li class="subMenuTT">
+                      <a href="{% url 'index' %}" title="" data-original-title="seo-services">Premium Kenyan Tea</a>
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="{% url 'index' %}" title="" data-original-title="Pay Per Click Management ">Quality Kenyan Coffee</a>
+                    </li>
+                    <li class=" subMenuTT">
+                      <a href="{% url 'index' %}">Meat &amp; Meat Products</a>
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Fresh Pineapples</a>
+
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Livestock</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class=" dropmenu ">
+                  <a href="{% url 'imports' %}" title="" data-original-title="">Imports</a>
+                  <span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li class="subMenuTT">
+                      <a href="{% url 'imports' %}" title="" data-original-title="seo-services">Office Equipment</a>
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="{% url 'imports' %}" title="" data-original-title="Pay Per Click Management ">Equipment &amp; Machinery</a>
+                    </li>
+                    <li class=" subMenuTT">
+                      <a href="{% url 'imports' %}">Pharmacetecal Products</a>
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="{% url 'imports' %}" title="" data-original-title="Online Reputation Management">Construction Materials</a>
+
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Sugar</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class=" dropmenu ">
+                  <a href="{% url 'logistics' %}" title="" data-original-title="">Logistics</a>
+                  <span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li class="subMenuTT">
+                      <a href="{% url 'logistics' %}" title="" data-original-title="seo-services">Locations</a>
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="{% url 'logistics' %}" title="" data-original-title="Pay Per Click Management ">Wharehousing </a>
+                    </li>
+                    <li class=" subMenuTT">
+                      <a href="{% url 'logistics' %}">Freight Management</a>
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="{% url 'logistics' %}" title="" data-original-title="Online Reputation Management">Courier Shipping</a>
+
+                    </li>
+                  </ul>
+                </li>
+
+                <li class=" dropmenu ">
+                  <a href="{% url 'solutions' %}" title="" data-original-title="">IT Solutions</a>
+                  <span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li class="subMenuTT">
+                      <a href="{% url 'solutions' %}" title="" data-original-title="seo-services">Software Development</a>
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="{% url 'solutions' %}" title="" data-original-title="Pay Per Click Management ">Server Configuration</a>
+                    </li>
+                    <li class=" subMenuTT">
+                      <a href="{% url 'solutions' %}">Web Hosting</a>
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="{% url 'solutions' %}" title="" data-original-title="Online Reputation Management">Internet Marketing</a>
+
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="{% url 'solutions' %}" title="" data-original-title="Social Media Marketing">Network Setup</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="lastChild onlineButtonTT finished">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                    <rect rx="2" ry="2" class="shape" height="100%" width="100%"></rect>
+                  </svg>
+                  <a href="{% url 'contact' %}" title="" data-original-title="Online Cost Calculator" style="">
+                    <span>For Enquires</span>
+                    <br> Contact Us</a>
+                </li>
+                <li id="magic-line" style="width: 25.442px; left: 0.799992px; display: none; overflow: hidden;"></li>
+              </ul>
+              <div class="defineFloat mobPhone">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="tel:+254 (0)20 2004959">
+                      <img src="{% static 'home/images/phonePop.png' %}" class="img-responsive" alt="">+254 (0)20 2004959</a>
+                  </li>
+                  <li>
+                    <a href="{% url 'index' %}">
+                      <img src="{% static 'home/images/mailPop.png' %}" class="img-responsive" alt="">
+                      <span class="salesEmail">
+                        <a href="mailto:info@tatc.co.ke">
+                          <i class="fa fa-envelope" aria-hidden="true"></i>info@tatc.co.ke</a>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,97 @@
+
+/*--------------------------------------------------------------------------
+ * Plugin: Web Slide Navigation System
+ * Demo Link: http://webslidemenu.uxwing.com/
+ * Author: UXWing
+ * License: http://codecanyon.net/licenses/standard
+*/
+
+/*--------------------------------------------------------------------------
+[Table of contents]
+
+01 Base CSS
+02 Desktop CSS
+03 Tab CSS
+04 Mobile CSS
+05 Additional Themes (Optionnal)
+--------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------
+|  01  Base CSS
+--------------------------------------------------------------------------*/
+
+.wsmenu html,
+.wsmenu body,
+.wsmenu iframe,
+.wsmenu h1,
+.wsmenu h2,
+.wsmenu h3,
+.wsmenu h4,
+.wsmenu h5,
+.wsmenu h6 {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: antialiased;
+    font-smooth: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    font-smoothing: subpixel-antialiased !important;
+    font-smooth: subpixel-antialiased;
+}
+
+.wsmenu .cl {
+    clear: both;
+}
+
+.wsmenu img,
+object,
+embed,
+video {
+    border: 0 none;
+    max-width: 100%;
+}
+
+.wsmenu a:focus {
+    outline: none !important;
+}
+
+.wsmenu:before,
+.wsmenu:after {
+    content: "";
+    display: table;
+}
+
+.wsmenu:after {
+    clear: both;
+}
+
+
+/* Additional CSS */
+
+.cta-btn {
+    border: 0;
+    text-align: center;
+    color: #fff;
+    background: #23479B;
+    padding: .6rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+.cta-btn a:hover {
+    text-decoration: none;
+}
+
+.cta-ul {
+    margin-top: 1rem;
+    background: #23479B;
+}

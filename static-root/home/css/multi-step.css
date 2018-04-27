@@ -1,0 +1,40 @@
+.onlineFormInner fieldset{display:none;padding-top:50px;position:relative;right:-100%;position:absolute;width:100%;}
+.onlineFormInner fieldset .fieldsetInner{margin:0 auto;width:450px;}
+.onlineFormInner #first{display:inline-block;left:0px;}
+.onlineFormInner fieldset select{background:#f8f8f8 url("../images/onlineFormSelectBg.png") no-repeat scroll right 18px center;border:2px solid #9a9a9a;border-radius:2px;color:rgba(0, 0, 0, 0.7);display:inline-block;font-family:OpenSansRegular;font-size:14px;height:50px;padding:0 40px 0 18px;width:350px;}
+.onlineFormInner fieldset input.bigBox{background-color:#f8f8f8;border:2px solid #9a9a9a;border-radius:3px;color:rgba(0, 0, 0, 0.7);display:inline-block;font-family:OpenSansRegular;font-size:14px;padding:10px 18px;width:350px;line-height:25px;}
+.onlineFormInner fieldset textarea{background-color:#f8f8f8;border:2px solid #9a9a9a;border-radius:3px;color:rgba(0, 0, 0, 0.7);display:inline-block;font-family:OpenSansRegular;font-size:14px;height:95px;padding:10px 18px;width:350px;line-height:25px;resize:none;}
+.onlineFormInner fieldset.contactInfo .text_field{background-color:#f8f8f8;border:2px solid #9a9a9a;border-radius:3px;color:rgba(0, 0, 0, 0.7);display:inline-block;font-family:OpenSansRegular;font-size:14px;height:50px;padding:0 18px;width:350px;margin:0 3px 8px;}
+.onlineFormInner fieldset.contactInfo input.pre_btn{margin:0 5px 0 0;padding:0 20px;width:auto;}
+.onlineFormInner fieldset input.pre_btn, .onlineFormInner fieldset input.next_btn, .onlineFormInner fieldset input.submit_btn{background-color:#ffd603;box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);color:#000000;display:inline-block;font-family:RalewaySemiBold;font-size:17px;height:50px;letter-spacing:1px;margin:20px 0 36px;text-transform:uppercase;width:295px;border:none;border-radius:4px;}
+.onlineFormInner fieldset select{-moz-appearance:none;-webkit-appearance:none;appearance:none;}
+.onlineFormInner fieldset h2{color:#000000;font-family:RalewayBold;font-size:21px;line-height:28px;text-transform:initial;margin-bottom:35px;}
+.onlineDivide > hr{border:1px solid #dadada;display:inline-block;margin:0;width:350px;}
+.onlineFormInner .fixProgress ul::before{border-top:1px solid #bebebe;content:"";left:50%;position:absolute;top:52%;transform:translate(-50%, -50%);width:40%;z-index:0;}
+#progressBar h6{color:rgba(0, 0, 0, 0.7);font-family:OpenSansBold;font-size:14px;text-transform:uppercase;width:100%;margin:0 0 9px;display:none;}
+#progressBar h6.headingActive{display:block;}
+#progressBar{display:inline-block;margin:40px 0 0;width:350px;}
+.onlineFormInner .fixProgress ul li.active span{background-image:url("../images/onlineFormActiveLi.png");}
+.onlineFormInner .fixProgress ul li span{width:9px;height:9px;display:inline-block;background-image:url("../images/onlineFormLi.png");background-repeat:no-repeat;background-size:cover;background-position:center calc();background-color:#efefef;position:relative;z-index:1;}
+.onlineFormInner .fixProgress ul{display:inline-block;position:relative;width:350px;}
+.onlineFormInner .fixProgress ul li{display:inline-block;}
+.onlineFormInner .fixProgress ul li:not(:last-child){margin:0 11px 0 0;}
+.onlineFormInner fieldset.contactInfo{padding-top:20px;}
+.onlineFormInner fieldset.contactInfo h2{margin:0 0 9px;}
+.onlineFormInner fieldset.contactInfo textarea.address{margin:0 0 8px;}
+.onlineFormInner fieldset.contactInfo .text_field.capcha{margin:0;}
+.onlineFormInner fieldset.contactInfo input.submit_btn{margin-bottom:5px;margin-top:18px;}
+.onlineFormInner fieldset.contactInfo #progressBar{margin:20px 0 0 0;}
+.fixProgress{bottom:20px;left:50%;position:absolute;transform:translateX(-50%);}
+.onlineFormInner fieldset input.pre_btn, .onlineFormInner fieldset input.next_btn{font-size:15px;height:50px;margin:3% 30px 3% 0;width:160px;}
+.onlineFormInner fieldset input.next_btn{margin-right:0;}
+.onlineFormInner fieldset input.pre_btn{background-color:#1b232c;color:#ffffff;}
+.onlineFormInner form fieldset .dropdown{display:inline-block;width:350px;}
+.onlineFormInner form fieldset .dropdown button{background:#f8f8f8 url("../images/onlineFormSelectBg.png") no-repeat scroll right 18px center;border:2px solid #9a9a9a;border-radius:2px;font-family:OpenSansRegular;font-size:14px;height:50px;padding:0 40px 0 18px;text-align:left;width:100%;white-space:inherit;}
+.onlineFormInner form fieldset .dropdown.open button, .onlineFormInner form fieldset .dropdown.open button:focus, .onlineFormInner form fieldset .dropdown.open button:active{background:#f8f8f8 url("../images/onlineFormSelectBg.png") no-repeat scroll right 18px center;color:inherit;box-shadow:inherit;}
+.onlineFormInner form fieldset .dropdown.open ul{padding:0;width:100%;}
+.onlineFormInner form fieldset .dropdown.open ul li a{font-family:OpenSansRegular;padding:10px 18px;width:100%;white-space:inherit;}
+.onlineFormInner fieldset#first input.next_btn{width:160px;}
+.onlineFormInner fieldset.contactInfo .text_field.email, .onlineFormInner fieldset.contactInfo .text_field.phone{width:170px;}
+.onlineFormInner fieldset.contactInfo .text_field.position{width:350px;}
+.onlineFormInner .fixProgress ul.lineWidth::before{border-top:1px solid hsl(0, 0%, 75%);content:"";left:50%;position:absolute;top:52%;transform:translate(-50%, -50%);width:67%;z-index:0;}
