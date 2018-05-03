@@ -8,7 +8,7 @@ class Article(models.Model):
     slug = models.SlugField()
     body = models.TextField()
     date = models.DateField(auto_now_add=True)
-    thumb = models.ImageField(default='default.png', blank=True)
+#    thumb = models.ImageField(default='default.png', blank=True)
     author = models.CharField(max_length=100, default='Emmanuel Makonde')
 
     def __str__(self):
