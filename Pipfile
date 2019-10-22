@@ -20,7 +20,7 @@ requests = "==2.18.4"
 "urllib3" = "==1.22"
 whitenoise = "==3.3.1"
 Django = "==2.0.4"
-Pillow = "==5.0.0"
+Pillow = "==6.2.0"
 
 [dev-packages]
 
